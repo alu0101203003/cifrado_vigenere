@@ -1,4 +1,4 @@
-# cifrado_vigenere
+# Cifrado Vigenere
 
 Esta práctica está realizada en html, css y JavaScript.
 
