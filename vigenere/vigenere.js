@@ -3,7 +3,7 @@ var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',
 // --------------- Funciones principales ----------------- \\
 
 function encriptar (){
-	var datos = get_datos('encriptar');
+	var datos = get_datos("encriptar");
 	var mensaje = datos.mensaje;
 	var clave = datos.clave;
 	var mensaje_cifrado = cifrar(clave,mensaje,alfabeto);
@@ -12,7 +12,7 @@ function encriptar (){
 }
 
 function desencriptar (){
-	var datos = get_datos('desencriptar');
+	var datos = get_datos("desencriptar");
 	var mensaje_cifrado = datos.mensaje;
 	var clave = datos.clave;
 	var mensaje_descifrado = descifrar(clave,mensaje_cifrado,alfabeto);
@@ -74,10 +74,10 @@ var print_mensaje = function(mensaje) {
 }
 var get_datos = function(opt){
 	var clave = prompt("Inserte la clave que desea usar en mayusculas", "CLAVE");
-	if (opt = 'encriptar') {
+	if (opt = "encriptar") {
 		var mensaje = prompt("Inserte el mensaje a encriptar en mayusculas", "MENSAJE A ENCRIPTAR");
 	}
-	else if (opt = 'desencriptar') {
+	else if (opt = "desencriptar") {
 		mensaje = prompt("Inserte el mensaje a desencriptar en mayusculas", "MENSAJE A DESENCRIPTAR");
 	}
 	clave = clave.replaceAll(' ', '');
